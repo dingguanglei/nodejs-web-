@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Ding</title>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/index.min.css" type="text/css">
+    <noscript>
+        <link rel="stylesheet" href="css/show.min.css" type="text/css">
+        <p style="color:red;font-weight:900;font-size:30px;">本页面需要开启JavaScript</p>
+    </noscript>
+
+</head>
+<body>
+<div class="container" id="wrapper">
+    <script>(function () {
+        var myDate = new Date();
+        var body = document.getElementsByTagName("body")[0];
+        var hour = myDate.getHours();
+        if (hour > 18 || hour < 6) {
+            body.setAttribute("class", "night");
+            document.getElementById("wrapper").style.background = "url(image/night.png) repeat-x top"
+        } else {
+            body.setAttribute("class", "day");
+            document.getElementById("wrapper").style.background = "url(image/day.png) no-repeat top left"
+        }
+    })();</script>
+    <div class="logo"><i id="logo" class="fa fa-eercast fa-5x fa-spin" ></i> </div>
+    <div class="theme"><h1>WEB DESIGN</h1></div>
+    <div class="designer"><h3>天道酬勤，封尘</h3></div>
+    <div class="optionBox row">
+        <div class="col-xs-12 col-md-4"><a class="option option-one" href="study/index.html">
+            <div class="option-logo logo-study"><i class=" fa fa-mortar-board fa-5x"></i></div>
+            <h2>学习</h2> <h4>web前端学习</h4></a></div>
+        <div class="col-xs-12 col-md-4"><a class="option option-two" href="blog/index.html">
+            <div class="option-logo logo-blog"><i class=" fa fa-file-text fa-5x"></i></div>
+            <h2>博客</h2> <h4>学习前端的一些感想</h4></a></div>
+        <div class="col-xs-12 col-md-4"><a class="option option-three" href="#">
+            <div class="option-logo logo-about"><i class=" fa fa-user-circle-o fa-5x"></i></div>
+            <h2>关于我</h2> <h4>我的个人介绍</h4></a></div>
+    </div>
+    <div class="share">
+        <ul>
+            <li><a target="_blank" href="https://github.com/mima031103"><i class="fa fa-3x fa-github"></i>
+                <p>github</p></a></li>
+        </ul>
+    </div>
+</div>
+<div style="text-align:center;font-size:11px;color:gray">
+    <a style="color:gray" href='http://www.beianbaba.com/icp/dingguanglei.top' target='_blank'>京ICP备16060950号-1</a>
+    <div id="copyRight">CopyRight &copy 封尘</div>
+</div>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>

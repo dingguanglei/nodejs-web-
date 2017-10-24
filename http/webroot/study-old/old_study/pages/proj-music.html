@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐小筑</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bodyhide.css">
+    <link rel="stylesheet" type="text/css" href="../css/proj-music.css">
+    <!--<script  src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>-->
+</head>
+<body>
+
+<div class="heading">
+    <div class="page-title brief-switch ">
+        <div class="page-header game-switch">
+            <h1>&#160;音乐小筑 <small>音乐是一扇通往心路的大门</small></h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 ">
+            <div class="navigation">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    萨克斯
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class=" panel-body" >
+                                <table class="table table-musician table-hover" >
+                                    <tr><td><a target="iiframe" href="proj-music-items/Dave_Koz.html" id="Dave_Koz" >Dave Koz</a> </td></tr>
+                                    <!--<tr><td><a id="Michael_Lington">麦克林顿</a></td></tr>-->
+                                    <!--<tr><td><a id="David_Sanborn" target="frame">大卫桑本</a></td></tr>-->
+                                    <tr><td><a target="iiframe" class="active" href="proj-music-items/ED_calle.html"  id="ED_calle">埃迪凯勒</a></td></tr>
+                                    <!--<tr><td><a id="Xiaolinxiangzhi">小林香织</a></td></tr>-->
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    钢琴
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                    <table class="table table-musician table-hover" >
+                                        <tr><td><a href="proj-music-items/Dave_Koz.html"  >卢多维克</a> </td></tr>
+                                        <tr><td><a href="proj-music-items/Dave_Koz.html"  >马克西姆</a> </td></tr>
+                                    </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    小提琴
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <table class="table table-musician table-hover" >
+                                    <tr><td><a href="proj-music-items/Dave_Koz.html"  >提琴双杰</a> </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 ">
+            <iframe name="iiframe" id="container-window" src="proj-music-items/Dave_Koz.html" scrolling="no"></iframe>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/bodyshow.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/proj-music.js"></script>
+</body>
+</html>

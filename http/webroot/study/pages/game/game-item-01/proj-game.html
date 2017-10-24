@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <title>游戏</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/proj-game.css">
+    <link rel="stylesheet" type="text/css" href="css/bodyhide.css">
+</head>
+<body>
+
+<div class="heading">
+    <div class="page-title brief-switch ">
+        <div class="page-header game-switch">
+            <h1>天天爱消除 <small>点选消除相同颜色的方块</small></h1>
+        </div>
+    </div>
+</div>
+<div class="body">
+    <div class="container-game ">
+        <div class="gameReset">
+            <span>游戏倒计时:<span id="time">20</span>s &#160;</span>
+            <button type="button" class="btn btn-success " id="restart">重新开始</button>
+        </div>
+        <div class="gameBox">
+            <div class="box" id="box-1"><img src="image/gamebox/1.jpg"></div>
+            <div class="box" id="box-2"><img src="image/gamebox/1.jpg"></div>
+            <div class="box" id="box-3"><img src="image/gamebox/2.jpg"></div>
+            <div class="box" id="box-4"><img src="image/gamebox/2.jpg"></div>
+            <div class="box" id="box-5"><img src="image/gamebox/3.jpg"></div>
+            <div class="box" id="box-6"><img src="image/gamebox/3.jpg"></div>
+            <div class="box" id="box-7"><img src="image/gamebox/4.jpg"></div>
+            <div class="box" id="box-8"><img src="image/gamebox/4.jpg"></div>
+            <div class="box" id="box-9"><img src="image/gamebox/5.jpg"></div>
+            <div class="box" id="box-10"><img src="image/gamebox/5.jpg"></div>
+            <div class="box" id="box-11"><img src="image/gamebox/6.jpg"></div>
+            <div class="box" id="box-12"><img src="image/gamebox/6.jpg"></div>
+            <img  class="gameEnd" src="image/victory.jpg">
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bodyshow.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<scrit src="js/autoBackgroundScroll.js"></script>
+<script src="js/proj-game.js"></script>
+</body>
+</html>

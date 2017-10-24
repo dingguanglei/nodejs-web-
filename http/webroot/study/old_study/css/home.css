@@ -1,0 +1,40 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    background-color: lavender;
+}
+
+.navbar{
+    margin-bottom: 0;
+}
+
+.body{
+    /*width:40%;*/
+    margin: auto;
+}
+
+.container{
+    /*width:50%;*/
+}
+.container-fluid,.page-title{
+    width: 100%;
+    margin: auto;
+}
+#container-window{
+    /*margin:auto;*/
+    width:100%;
+    border:0;
+}
+.after, .after .resume{
+    display: none;
+}
+.content{
+    height:auto;
+    margin: auto;
+
+}
+.after{
+    padding-top: 4px;
+}

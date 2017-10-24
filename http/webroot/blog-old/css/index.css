@@ -1,0 +1,157 @@
+*{
+    padding:0;
+    margin:0;
+    transition: display 1s 1s;
+}
+h1,h4{
+font-family:"STXingKai";
+}
+
+body{
+    background-color:gainsboro ;
+}
+.hr{
+    height:1px;
+    background-color: dimgray;
+    width:100%;
+}
+a:hover,a:link{
+    text-decoration: none;
+}
+.header{
+    height:10em;
+    width:100%;
+    padding-top:5px ;
+    /*padding-left:5%;*/
+    background-color: #333333;
+}
+.container{
+    width:85%;
+    margin:auto;
+}
+
+.header-title{
+    margin:auto;
+    color:white;
+}
+li{
+    list-style-type: none;
+    display: inline;
+    line-height: 50px;
+    padding:0;
+}
+nav a{
+    display: inline-block;
+    line-height: inherit;
+    color:dimgray;
+    font-weight: bold;
+    padding:0 20px ;
+
+}
+nav a:hover{
+    color:black;
+    background-color: #9d9d9d;
+}
+.shadowBox{
+    border-radius: 3px 3px;
+    box-shadow: #9d9d9d 0 0 2px 2px;
+    background-color: white;
+    margin: 10px 0;
+}
+.content{
+    margin-top:30px;
+}
+.content-left-lastBox{
+   height:60px;
+}
+.content-left-box{
+    width:90%;
+    margin: auto;
+    padding:5px 0  20px 0;
+    border-bottom: darkgray 1px dashed;
+}
+.box-footer a:before{
+    content:url("../images/glyphicons-223-share.png");
+
+}
+.selfBox{
+    width:90%;
+    text-align: center;
+    padding:30px 15px 15px 15px;
+    margin: auto;
+}
+.selfBox img{
+    width:100%;
+
+}
+.content-left-box img{
+    width:100%;
+}
+article:first-letter{
+    font-size: 25px;
+    font-weight: bold;
+}
+article:first-letter:before{
+/*padding-left:10px;*/
+}
+.time{
+    color: dimgray;
+}
+@media ( max-width: 1000px) {
+    .container{
+        width:100%;
+        padding:0;
+    ;}
+    .content-left{
+        padding:0px;
+    }
+    .content-left-box{
+        /*margin:0 0 0 5px;*/
+        /*margin-right: 5px;*/
+        padding:0 5px;
+        width:100%;
+        border-radius:0;
+    }
+    .header-title{
+        margin:5px 0 10px 20px;
+    }
+    nav a{
+        width:24%;
+        line-height:3em;
+        border-right:1px dotted lightslategray;
+        text-align: center;
+        font-size: 33px;
+    }
+    .hr{
+        display: none;
+    }
+    .content{
+        margin-top:0;
+    }
+    ul{
+        margin-bottom: 0;
+    }
+    article{
+        font-size: 58px;
+    }
+    article:first-letter{
+        font-size: 66px;
+    }
+    .time{
+        font-size: 25px;
+    }
+    .box-footer{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+    .articleTitle{
+        font-size: 68px;
+    }
+    .header-title h1{
+        font-size: 50px;
+    }
+    .header-title h4{
+        font-size: 35px;
+    }
+
+}

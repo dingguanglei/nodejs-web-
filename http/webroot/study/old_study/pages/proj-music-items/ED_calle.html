@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ED_calle</title>
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <style>
+        .introduction{
+            margin: 15px;
+        }
+        body{
+            height:auto;
+        }
+        .glyphicon{
+            opacity: 0.3;
+            font-size:20px;
+        }
+        a{
+            color:black;
+        }
+        a:hover{
+            opacity: 1;
+            cursor:pointer;
+            list-style-type: none;
+            /*text-decoration: none;*/
+        }
+        .glyphicon:hover{
+            opacity: 1;
+        }
+        .playing,.playing:visited,.playing:link{
+            color:#5cb85c;
+        }
+    </style>
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".music-list").find("a").on("click",playAudio);
+        });
+
+        function playAudio() {
+            var player=document.getElementById("playbar");
+
+            $(".music-list").find("a").removeClass("playing"); //去除之前正在播放的标签
+            $(this).addClass("playing");
+            $(this).find(".glyphicon").css("opacity","1");
+
+            var src=this.getAttribute("href");
+            player.setAttribute("src",src+"ogg");
+
+            console.log(player.getAttribute("src"));
+            player.play();
+            return false;
+        }
+    </script>
+</head>
+<body>
+<div>
+    <div class="musicbox">
+        <div class="introduction ">
+            <div class="row">
+                <div class="col-sm-4  hidden-xs" >
+                    <img src="../../image/musicbox/ED_calle.jpg" class="img-responsive " alt="ED_calle image">
+                </div>
+                <div class="col-sm-7 col-xs-12 " >
+                    <h4>Ed Calle</h4>
+                    <p>&#160; &#160; &#160; &#160; Ed Calle艾迪·凯勒是典型的西班牙名字，
+                        现代爵士Saxphone手Ed Calle是西班牙后裔，出生在委内瑞拉
+                        ，生长在美国迈阿密。在迈阿密大学音乐的时候，他决心今后靠音乐吃饭，
+                        所以后来又攻读了硕士学位，研修爵士演奏。
+                        不过他的Jazz Music没有太多拉美特色－奔放、热情，相反，
+                        Ed Calle将Saxphone
+                        <span class="text-danger"><strong>深沉、浑厚</strong></span>
+                        的本色发挥到了极致。</p>
+                </div>
+            </div>
+            <div class="music-list">
+                <table class="table table-striped">
+                    <tr>
+                        <td>1</td>
+                        <td><a class="playing" href="../../source/ED_calle/Twilight."><span class="glyphicon glyphicon-play-circle"></span> Twilight</a> </td>
+                        <td><span>04:48</span></td>
+                        <td><span>专辑1</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="../../source/ED_calle/Love_After_Dark."><span class="glyphicon glyphicon-play-circle"></span> Love After Dark</a></td>
+                        <td class="songtime">04:12</td>
+                        <td>专辑2</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="music-bar block">
+                <audio id="playbar"  style="width:100%;" controls="controls">
+                    <source class="ogg"  src="../../source/ED_calle/Twilight.ogg"  type="audio/ogg">
+                    <source class="mp3"  src="../../source/ED_calle/Twilight.mp3"  type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

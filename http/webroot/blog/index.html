@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" style="min-height:100%">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ding</title>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/index.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
+    <noscript>
+        <link rel="stylesheet" href="css/show.css" type="text/css">
+        <p style="color:red;font-weight:900;font-size:30px;">本页面需要开启JavaScript</p>
+    </noscript>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js" type=text/javascript></script>
+    <script src="js/jquery.lazyload.js" type=text/javascript></script>
+
+    <script type="text/javascript" charset="utf-8">
+        $(function () {
+            $("img").lazyload({
+                placeholder: "images/loading.gif",
+                effect: "fadeIn"
+            });
+        });
+var str="非常感谢你的关注！我目前是一名学生，就读于北京。如果你也对前端或是全栈开发感兴趣，请联系我：308188605@qq.com";
+	console.log('%c'+str,'color:blue;font-size:2em;');
+    </script>
+</head>
+<body style="min-height:100%">
+
+<header>
+    <div class="wrapper">
+        <div class="logo">
+            <a href="../index.html">
+                <div><i id="logo" class="fa fa-eercast fa-5x fa-spin"></i></div>
+                <div class="designer"><h1> skyLake</h1></div>
+            </a>
+        </div>
+
+        <nav class="row-navbar" >
+            <ul>
+                <li class="shake-slow"><a href="../study/index.html" class="study"><i class="fa fa-mortar-board fa-2x"> 学习</i></a></li>
+                <li class="shake-slow"><a href="#" class="blog"><i class="fa fa-file-text fa-2x"> 博客</i> </a></li>
+                <li class="shake-slow"><a href="#" class="about"><i class="fa fa-user-circle-o fa-2x"> 介绍</i> </a></li>
+            </ul>
+        </nav>
+        <a href="" id="icon-menu" class="col-navbar navbar-section">
+
+            <div><i class="fa fa-bars fa-4x "></i></div>
+        </a>
+        <ul id="icon-menu-list"  style="height: 0px;">
+            <li><a href="../study/index.html" class="study"><i class="fa fa-mortar-board fa-2x"> 学习</i></a></li>
+            <li><a href="#" class="blog"><i class="fa fa-file-text fa-2x active"> 博客</i> </a></li>
+            <li><a href="#" class="about"><i class="fa fa-user-circle-o fa-2x"> 介绍</i> </a></li>
+        </ul>
+
+    </div>
+    <div class="container column">
+        <ul>
+            <li><a href="#" id="classify-total" class="color-total classify-active">所有</a></li>
+            <li><a href="#" id="classify-music" class="color-music">音乐</a></li>
+            <li><a href="#" id="classify-journal" class="color-journal">日记</a></li>
+            <li><a href="#" id="classify-study" class="color-study">学习心得</a></li>
+            <li><a href="#" id="classify-process" class="color-process">建站进度</a></li>
+        </ul>
+
+    </div>
+</header>
+
+
+<div class="container content" id="content-box-wrapper">
+    <!--<div class="content-box">-->
+        <!--<a href="" class="box box-color-process">-->
+            <!--<div class="pic-wrapper"><img src="contentLeftImages/loading.gif" data-original="contentLeftImages/13.jpg" alt=""></div>-->
+            <!--<div class="content-header"><h1>页面优化</h1></div>-->
+            <!--<p>优化了博客页面的字体大小。</p>-->
+            <!--<p>优化了手机端list字体图标的显示。</p>-->
+            <!--<p>修改了首页在不同浏览器判定夜晚时间不同的BUG。</p>-->
+            <!--<p>修改了首页左边距留白的问题。</p>-->
+            <!--<p>修改了首页不能铺满全屏的问题（尤其是在移动端）。</p>-->
+            <!--<div class="content-footer">2017/6/4 23:44</div>-->
+        <!--</a>-->
+    <!--</div>-->
+
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div id="footer-final-label" class="col-xs-12">
+                没有新内容了！！！
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="submit-article">
+    <div class="btn-writeArticle-warpper">
+        <a type="button"  class="btn-writeArticle">+</a>
+    </div>
+
+
+    <form id="newArticleForm" name="newArticleForm" class="newArticle" method="post">
+        <fieldset class="newArticleFieldset">
+            <legend>发表文章</legend>
+            <input type="text"  id="title" placeholder="*标题" name="title" required>
+            <input type="text" placeholder="*作者" name="author">
+            <select  name="type">
+                <option value="music">音乐</option>
+                <option value="journal">日记</option>
+                <option value="study">学习心得</option>
+                <option value="process" selected>建站进度</option>
+            </select>
+            <textarea name="content" id="article-content" cols="25" rows="6" placeholder="正文..."></textarea>
+            <button id="submiter" >提交</button>
+        </fieldset>
+    </form>
+
+
+</div>
+
+<script src="js/hammer.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

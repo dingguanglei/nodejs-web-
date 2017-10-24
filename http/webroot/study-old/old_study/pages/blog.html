@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/bodyhide.css">
+
+
+</head>
+<body>
+<div class="body">
+    <div class="publish panel panel-primary ">
+        <div class="panel-heading">
+            <h3 class="panel-title">发表新文章       <a id="btnClose" class=" btn"> <span class="glyphicon glyphicon-remove"></span> </a></h3>
+        </div>
+        <div id="publishContent" class="panel-body">
+            <form role="form">
+                <div id="publishContentTitle" class="form-group">
+                    <label class="sr-only">标签</label>
+                    <input type="text" class="form-control" placeholder="标题">
+                </div>
+                <div id="publishContentArticle" class="form-group">
+                    <label class="sr-only">文本框</label>
+                    <textarea class="form-control" rows="5" placeholder="正文..."></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="panel-footer text-right">
+            <button  id="btnPublishNow" class="btn btn-primary">发表</button>
+            <button id="btnPublishClearNow" class="btn btn-default">清空</button>
+        </div>
+    </div>
+    <div class="page-title  ">
+        <div class="page-header ">
+            <h1>博客 <small>个人博客站</small></h1>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="text-right">
+            <button class=" btn btn-info " >查看所有文章</button>
+            <button  id="btnPublish" class="btn btn-primary " >发表新文章</button>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="container left">
+            <div class="left-selfBrief">
+                <div class="left-selfBrief title"><strong>个人资料</strong></div>
+                <div class="left-selfBrief content">
+                    <div class="content-image">
+                        <img src="../image/blogSelfBef.jpeg">
+                    </div>
+                    <div class="content-name text-center"><h4>纳兰涟漪</h4></div>
+                    <div class="content-selfBrief text-center" >专心学习web前端...</div>
+                </div>
+            </div>
+            <div class="left-catalog">
+                <div class="left-catalog title"><strong>文章目录</strong></div>
+                <div class="catalog">
+                    <ul class="list-unstyled">
+                        <li><a href="#">省省省，看看我的省钱经</a></li>
+                        <li><a href="#">王宝强为什么不能这样做？</a></li>
+                        <li><a href="#">这算不算“别人家孩子”？</a></li>
+                        <li><a href="#">签证官的黑名单</a></li>
+                        <li><a href="#">'节俭的'的美国同事</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="title">正文</div>
+            <div class="right-content">
+                <div class="right-content-title">
+                    <h3>省省省，看看我的省钱经 <span class="label label-info">2016/9/30</span></h3>
+                </div>
+                <div class="right-content-article">
+                    <p>曾经留意过城里对退休需要多少存款的讨论，有人说多少个米才能保证退休的生活质量不下降，有人说至少几个米才能实现财务自由…….吓得一向乐观的我差点找根绳子去了。
+
+                        俗话说的好，开源节流是长久的生财之道。中年移居海外，在国内近20年的工作积累打了水漂，从此只能重起灶另支锅攒退休金。天生没有经商头脑，星象也看了，没有外财运，怎么办？怎么办？难道活人要被尿憋死不成？！
+
+                        不是还有节流吗？成了，那咱就勒紧腰带——省！省！省！
+
+                        怎么省，如何省？还是需要好好绞尽脑汁想一想，做做功课滴。
+
+                        节流这一块，无非衣食住行和健康保健。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/autoBackgroundScroll.js"></script>
+<script src="../js/bodyshow.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/blog.js"></script>
+
+</body>
+</html>

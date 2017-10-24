@@ -1,0 +1,74 @@
+*{
+    padding:0;
+    margin: 0;
+}
+.navbar{
+    margin-bottom: 0;
+}
+body{
+    /*background-color: lavender;*/
+    background-image: url("../image/proj_game_bg.jpg");
+}
+.body{
+    /*height:500px;*/
+    width:90%;
+    margin: auto;
+
+}
+.container-game{
+    /*border: 1px black solid;*/
+    /*width:700px;*/
+    margin: auto;
+    background-color: beige;
+    padding-top: 30px;
+    padding-bottom:50px;
+}
+.container-fluid,.page-title{
+    width: 90%;
+    margin: auto;
+}
+
+.gameBox{
+
+    box-shadow: 0 0 4px 2px ;
+    height:336px;
+    width:448px;
+    margin-top:30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gameEnd{
+    display: none;
+    height:336px;
+    width:448px;
+}
+
+.box{
+    border-radius: 3px 3px ;
+    border: 1px gold solid;
+    margin: 5px;
+    width:100px;
+    height: 100px;
+    float: left;
+
+    -webkit-transition: background-color 0.1s linear 0s;
+    -moz-transition: background-color 0.1s linear 0s;
+    -ms-transition: background-color 0.1s linear 0s;
+    -o-transition:background-color 0.1s linear 0s;
+    transition:background-color 0.1s linear 0s;
+    /*background-color: aquamarine;*/
+}
+
+.box:hover{
+    cursor: pointer;
+}
+
+.gameReset{
+    width:230px;
+    margin:auto;
+}
+.box img{
+    width:100px;
+    height:100px;
+    display:none;
+}

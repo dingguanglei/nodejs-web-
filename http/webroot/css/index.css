@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+a:hover, a:visited, a:link {
+    text-decoration: none;
+}
+
+html {
+    min-height: 100%;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 900;
+    color: #555566;
+}
+
+h2 {
+    font-weight: bold;
+    line-height: 40px;
+    color: #555566;
+    margin-top: 10px;
+}
+
+h3 {
+    text-align: center;
+    color: gray;
+    font-weight: bolder;
+}
+
+h4 {
+    color: dimgray;
+    line-height: 20px;
+}
+
+.container {
+    text-align: center;
+    min-width: 95%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+.night {
+    background: -moz-linear-gradient(top, rgb(96, 94, 94) 0%, #f4f4f4 28%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(96, 94, 94)), color-stop(28%, #F4F4F4));
+    background: -webkit-linear-gradient(top, rgb(96, 94, 94) 0%, #f4f4f4 28%);
+    background: -o-linear-gradient(top, rgb(96, 94, 94) 0%, #f4f4f4 28%);
+    background: -ms-linear-gradient(top, rgb(96, 94, 94) 0%, #f4f4f4 28%);
+    background: linear-gradient(to bottom, rgb(96, 94, 94) 0%, #f4f4f4 28%);
+}
+
+.day {
+    background: -moz-linear-gradient(top, rgb(255, 255, 255) 6%, #f4f4f4 28%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(6%, rgb(255, 255, 255)), color-stop(28%, rgba(231, 235, 240, 1)));
+    background: -webkit-linear-gradient(top, rgb(255, 255, 255) 6%, #f4f4f4 28%);
+    background: -o-linear-gradient(top, rgb(255, 255, 255) 6%, #f4f4f4 28%);
+    background: -ms-linear-gradient(top, rgb(255, 255, 255) 6%, #f4f4f4 28%);
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 6%, rgba(231, 235, 240, 1) 28%);
+}
+
+.logo {
+    width: 70px;
+    margin: 50px auto 30px auto;
+    -webkit-transition: opacity 0.8s ease 0s;
+    -moz-transition: opacity 0.8s ease 0s;
+    -o-transition: opacity 0.8s ease 0s;
+    transition: opacity 0.8s ease 0s;
+    opacity: 0;
+}
+
+.theme {
+    -webkit-transition: opacity 0.8s ease 0s;
+    -moz-transition: opacity 0.8s ease 0s;
+    -o-transition: opacity 0.8s ease 0s;
+    transition: opacity 0.8s ease 0s;
+    opacity: 0;
+    text-align: center;
+}
+
+.theme h1, .designer h3 {
+    font-size: 0;
+    -webkit-transition: font-size 0.8s ease 0s;
+    -moz-transition: font-size 0.8s ease 0s;
+    -o-transition: font-size 0.8s ease 0s;
+    transition: font-size 0.8s ease 0s;
+}
+
+.designer {
+    text-align: center;
+    -webkit-transition: opacity 0.8s ease 0s;
+    -moz-transition: opacity 0.8s ease 0s;
+    -o-transition: opacity 0.8s ease 0s;
+    transition: opacity 0.8s ease 0s;
+    opacity: 0;
+}
+
+.logo i {
+    font-size: 90px;
+}
+
+.option {
+    position: relative;
+    top: 80px;
+    display: block;
+    height: 240px;
+    background-color: white;
+    margin: 3px;
+    padding: 1.5em 13% 1em;
+}
+.optionBox > div {
+    padding: 1px;
+    transition: border-radius 0.4s;
+    overflow: hidden;
+}
+.optionBox > div:hover{
+    transition: border-radius 0.4s;
+    -webkit-border-radius: 8% 8%;
+    -moz-border-radius: 8% 8%;
+    border-radius: 8% 8%;
+}
+
+.optionBox {
+    margin-top: 30px;
+    -webkit-transition: opacity 0.8s ease 0.6s;
+    -moz-transition: opacity 0.8s ease 0.6s;
+    -o-transition: opacity 0.8s ease 0.6s;
+    transition: opacity 0.8s ease 0.6s;
+}
+
+.option-logo {
+    margin-top: 20px;
+}
+
+.option-one {
+    opacity: 0;
+    -webkit-transition: opacity 0.8s ease 0.6s, top 0.8s ease 0.6s, background 0.4s ease;
+    -moz-transition: opacity 0.8s ease 0.6s, top 0.8s ease 0.6s, background 0.4s ease;
+    -o-transition: opacity 0.8s ease 0.6s, top 0.8s ease 0.6s, background 0.4s ease;
+    transition: opacity 0.8s ease 0.6s, top 0.8s ease 0.6s, background 0.4s ease;
+    color: #46b8da;
+    background: white;
+}
+
+.option-one:hover, .option-one:active {
+    color: white;
+    background:linear-gradient(-135deg,#1193c3 0%,#a1f5f9 100%);
+}
+.option-two {
+    opacity: 0;
+    -webkit-transition: opacity 0.8s ease 0.8s, top 0.8s ease 0.8s, background 0.4s ease;
+    -moz-transition: opacity 0.8s ease 0.8s, top 0.8s ease 0.8s, background 0.4s ease;
+    -o-transition: opacity 0.8s ease 0.8s, top 0.8s ease 0.8s, background 0.4s ease;
+    transition: opacity 0.8s ease 0.8s, top 0.8s ease 0.8s, background 0.4s ease;
+    color: #67b168;
+    background: white;
+}
+
+.option-two:hover, .option-two:active {
+    color: white;
+    background: linear-gradient(-135deg,#37BC98 0%,#A0D468 100%);
+}
+
+.option-three {
+    opacity: 0;
+    -webkit-transition: opacity 0.8s ease 1s, top 0.8s ease 1s, background 0.4s ease;
+    -moz-transition: opacity 0.8s ease 1s, top 0.8s ease 1s, background 0.4s ease;
+    -o-transition: opacity 0.8s ease 1s, top 0.8s ease 1s, background 0.4s ease;
+    transition: opacity 0.8s ease 1s, top 0.8s ease 1s, background 0.4s ease;
+    color: orchid;
+    background: white;
+}
+
+.option-three:hover, .option-three:active {
+    color: white;
+    background: linear-gradient(-135deg,#ca27e6 0%,#e6c0ea 100%);
+}
+.share {
+    opacity: 0;
+    margin-top: 20px;
+    -webkit-transition: opacity 0.8s ease 1.4s;
+    -moz-transition: opacity 0.8s ease 1.4s;
+    -o-transition: opacity 0.8s ease 1.4s;
+    transition: opacity 0.8s ease 1.4s;
+}
+
+.share ul li a {
+    color: black;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.share ul li p {
+    color: dimgray;
+}
+
+#logo {
+    -webkit-transition: color 0.8s;
+    -moz-transition: color 0.8s;
+    -o-transition: color 0.8s;
+    transition: color 0.8s;
+}
+#wrapper {
+    margin-left: 0;
+    padding-left: 5%;
+}

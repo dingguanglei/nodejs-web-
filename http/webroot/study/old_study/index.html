@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ding——创意小站</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<body >
+<div class="heading">
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" id="navigation" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand"  target="iframe" href="pages/brief.html"><span style="font-size:30px ;color:yellow">Ding</span>&#160;|创意小站|</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav ">
+                    <li class="option active brief"><a target="iframe" href="pages/brief.html">简介</a></li>
+                    <li class="option blog"><a  target="iframe" href="pages/blog.html">我的博客</a></li>
+                    <li class="dropdown">
+                        <a href="#" id="test" class="dropdown-toggle " data-toggle="dropdown">项目 <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a  target="iframe" href="pages/proj-game.html">游戏</a></li>
+                            <li><a  target="iframe" href="pages/proj-music.html">音乐小筑</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-right authority" role="form">
+                    <div class="form-group before">
+                        <input type="password" placeholder="请输入授权码" class="form-control keycode">
+                    </div>
+                    <button type="button" class="btn btn-success before">授权</button>
+
+                    <div class="form-group after">
+                        <a href="pages/resume.pdf" target="_blank" type="button" class="btn btn-primary resume">我的简历</a>
+                    </div>
+
+                </form>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+
+
+<!--<div class="footing">-->
+<!--<nav class="navbar navbar-inverse" role="navigation"></nav>-->
+<!--</div>-->
+
+<div class="content">
+    <iframe name="iframe" id="container-window" src="pages/brief.html" scrolling="no"></iframe>
+</div>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/md5.js"></script>
+<script src="js/home.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--<script src="js/proj-game.js"></script>-->
+</body>
+</html>

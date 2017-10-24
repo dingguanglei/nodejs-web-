@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>戴夫·考兹</title>
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <style>
+        .introduction{
+            margin: 15px;
+        }
+        body{
+            height:auto;
+        }
+        .glyphicon{
+            opacity: 0.3;
+            font-size:20px;
+        }
+        a{
+            color:black;
+        }
+        a:hover{
+            opacity: 1;
+            cursor:pointer;
+            list-style-type: none;
+            /*text-decoration: none;*/
+        }
+        .glyphicon:hover{
+            opacity: 1;
+        }
+        .playing,.playing:visited,.playing:link{
+            color:#5cb85c;
+        }
+    </style>
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".music-list").find("a").on("click",playAudio);
+        });
+
+        function playAudio() {
+            var player=document.getElementById("playbar");
+
+            $(".music-list").find("a").removeClass("playing"); //去除之前正在播放的标签
+            $(this).addClass("playing");
+            $(this).find(".glyphicon").css("opacity","1");
+
+            var src=this.getAttribute("href");
+            player.setAttribute("src",src+"ogg");
+
+            console.log(player.getAttribute("src"));
+            player.play();
+            return false;
+        }
+    </script>
+</head>
+<body>
+<div>
+    <div class="musicbox">
+        <div class="introduction ">
+            <div class="row">
+                <div class="col-sm-4  hidden-xs" >
+                    <img width="300px" height="300px" src="../../image/musicbox/Dave_Koz.jpg" class="img-responsive " alt="ED_calle image">
+                </div>
+                <div class="col-sm-7 col-xs-12 " >
+                    <h4>戴夫·考兹</h4>
+                    <p>&#160; &#160; &#160; &#160;戴夫·考兹（Dave Koz），1963年3月27日出生，萨克斯乐手。
+                        他是继肯尼基(KENNY G)之后，走红全球流行乐坛的萨克斯乐手。
+                        其地位横跨于融合爵士、跨界、成人抒情、 流行 演奏等领域，
+                        已经成为<span class="text-danger"><strong>Smooth Jazz</strong></span>
+                        乐界的代名词.</p>
+                </div>
+            </div>
+            <div class="music-list">
+                <table class="table table-striped">
+                    <tr>
+                        <td>1</td>
+                        <td><a class="playing" href="../../source/ED_calle/Twilight."><span class="glyphicon glyphicon-play-circle"></span> I believe</a> </td>
+                        <td><span>04:48</span></td>
+                        <td><span>Saxophonic</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="../../source/ED_calle/Love_After_Dark."><span class="glyphicon glyphicon-play-circle"></span> All I See Is You</a></td>
+                        <td class="songtime">04:12</td>
+                        <td> Saxophonic</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="music-bar block">
+                <audio id="playbar"  style="width:100%;" controls="controls">
+                    <source class="ogg"  src="../../source/ED_calle/Twilight.ogg"  type="audio/ogg">
+                    <source class="mp3"  src="../../source/ED_calle/Twilight.mp3"  type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
